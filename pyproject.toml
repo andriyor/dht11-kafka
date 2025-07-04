@@ -6,5 +6,5 @@ readme = "README.md"
 dependencies = [
     "adafruit-circuitpython-dht>=4.0.9",
     "kafka-python>=2.2.15",
-    "Adafruit-Blinka==8.60.2"
+    "Adafruit-Blinka==8.60.4"
 ]

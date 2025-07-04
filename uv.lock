@@ -4,7 +4,7 @@ requires-python = ">=3.12"
 
 [[package]]
 name = "adafruit-blinka"
-version = "8.60.2"
+version = "8.60.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "adafruit-blinka-raspberry-pi5-neopixel", marker = "platform_machine == 'aarch64'" },
@@ -13,15 +13,15 @@ dependencies = [
     { name = "adafruit-pureio" },
     { name = "binho-host-adapter" },
     { name = "jetson-gpio", marker = "platform_machine == 'aarch64'" },
-    { name = "lgpio", marker = "sys_platform == 'linux'" },
+    { name = "lgpio", marker = "python_full_version < '3.13' and sys_platform == 'linux'" },
     { name = "pyftdi" },
     { name = "rpi-gpio", marker = "platform_machine == 'aarch64' or platform_machine == 'armv6l' or platform_machine == 'armv7l'" },
     { name = "rpi-ws281x", marker = "platform_machine == 'aarch64' or platform_machine == 'armv6l' or platform_machine == 'armv7l'" },
     { name = "sysv-ipc", marker = "platform_machine != 'mips' and sys_platform == 'linux'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/de/79/49f191dcb35a1c1455670ea0b545cdea8e2090b2a11c087c25ed0317d728/adafruit_blinka-8.60.2.tar.gz", hash = "sha256:5ae160437565659d505d484c029839dafb189f97b29afe019642f93951971ed3", size = 265710, upload-time = "2025-06-19T17:50:55.391Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/7b/f675aecd5464db5ad55202fa1d64a0e6b31ac9fe488707927b4498b3fa1a/adafruit_blinka-8.60.4.tar.gz", hash = "sha256:12416b84060c94c328a85632f5fd9b9309b6c527b7cba28fd5c60592c19bc61b", size = 265749, upload-time = "2025-06-20T18:18:30.302Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ed/0d/11bc7c4c52cf331a749b5a2e8e3c1c49e1a772c65befa627265cf88dd6de/adafruit_blinka-8.60.2-py3-none-any.whl", hash = "sha256:88bbe99cf600c21ab44ee646ad984626a98048524460756b28141c691ac1b1fa", size = 390299, upload-time = "2025-06-19T17:50:52.421Z" },
+    { url = "https://files.pythonhosted.org/packages/56/ad/0442fd9919798df236853b1b568c447a30280badde1c867c691ea2a80308/adafruit_blinka-8.60.4-py3-none-any.whl", hash = "sha256:1f22ad3784adb7e711f3510e4bab508fd12433354173f1217862a8f6cb8cefe9", size = 393582, upload-time = "2025-06-20T18:18:28.6Z" },
 ]
 
 [[package]]
@@ -143,7 +143,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "adafruit-blinka", specifier = "==8.60.2" },
+    { name = "adafruit-blinka", specifier = "==8.60.4" },
     { name = "adafruit-circuitpython-dht", specifier = ">=4.0.9" },
     { name = "kafka-python", specifier = ">=2.2.15" },
 ]
