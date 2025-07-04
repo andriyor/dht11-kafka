@@ -3,8 +3,8 @@ name = "dht11-kafka"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
 dependencies = [
     "adafruit-circuitpython-dht>=4.0.9",
     "kafka-python>=2.2.15",
+    "Adafruit-Blinka==8.60.2"
 ]
