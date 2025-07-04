@@ -23,4 +23,5 @@ while True:
         print("Sent:", payload)
     except Exception as e:
         print("Error:", e)
-    time.sleep(2)
+
+    time.sleep(5)
