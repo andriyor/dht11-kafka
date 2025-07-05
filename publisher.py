@@ -6,7 +6,7 @@ import board
 from kafka import KafkaProducer
 
 producer = KafkaProducer(
-    bootstrap_servers="192.168.0.144:9092",
+    bootstrap_servers="192.168.0.162:9092",
     value_serializer=lambda v: json.dumps(v).encode("utf-8"),
 )
 
