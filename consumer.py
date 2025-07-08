@@ -22,7 +22,7 @@ conn.commit()
 
 consumer = KafkaConsumer(
     "sensor-data",
-    bootstrap_servers="192.168.0.144:9092",
+    bootstrap_servers="192.168.0.162:9092",
     value_deserializer=lambda m: json.loads(m.decode("utf-8")),
     auto_offset_reset="latest",
     enable_auto_commit=True,
